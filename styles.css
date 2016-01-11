@@ -1,0 +1,164 @@
+#header
+{
+	height: 64px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	position: absolute;
+	background-color: #00ACC1;
+}
+
+#texts_title
+{
+	padding-left: 140px;
+	padding-top: 17px;
+	margin: 0;
+	color: #EEE;
+	font-size: 175%;
+	cursor: pointer;
+}
+			
+#div_sign_in_up
+{
+	top: -40;
+	left: -100;
+	float: right;
+	color: #EEE;
+	display: inline;
+	position: relative;
+}
+
+#div_sign_in_up a {
+	padding-left: 205px;
+	text-decoration: none;
+	color: #F5F5F5;
+	font-size: 15px;
+}
+
+input[type=text], input[type=password] {
+	height: 30px;
+	padding: 0 5px;
+	font-size: 15px;
+	border-radius: 3px;
+	border: none;
+	color: #616161;
+}
+
+input[type=submit] {
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	background-color: #E0E0E0;
+	color: #616161;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:active {
+	background-color: #D81B60;
+	color: #E0E0E0;
+}
+
+#div_sidebar
+{				
+	width: 10%;
+	height: 90%;
+	top: 64;
+	right: 0;
+	left: 0;
+	position: absolute;
+	z-index: 3;
+	background-color: #EEE;
+	border-right-color: aqua;
+	border-right-style: groove;
+	transition: width 0.5s;
+}
+			
+#div_sidebar:hover
+{
+	width: 15%;
+}
+
+.menu
+{
+	width: 100%;
+	height: 50px;
+	padding-top: 23px;
+	font-size: 120%;
+	cursor: pointer;
+	background-color: #EEE;
+	color: #616161;
+	z-index: 3;
+	text-align: center;
+}
+
+
+
+
+
+
+body {
+	margin: 0 auto;
+	background-color: #BDBDBD;
+}
+
+#wrapper {
+	max-width: 1320px;
+	width: 30%;
+	margin: auto;
+	margin-top: 120px;
+	padding: 20px;
+	text-align: center;
+	background-color: #EEEEEE;
+	border-radius: 10px; 
+}
+
+#wrapper #RegForm input[type=text], #wrapper #RegForm input[type=password] {
+	width: 80%;
+	height: 30px;
+	padding: 0 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 15px;
+}
+
+#wrapper #RegForm input[type=submit] {
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	font-size: 17px;
+	background-color: #E91E63;
+	color: #F5F5F5;
+	border-radius: 5px;
+	box-shadow: none;
+	border: none;
+	cursor: pointer;
+}
+
+#wrapper #RegForm input[type=submit]:active {
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	font-size: 17px;
+	background-color: #D81B60;
+	color: #F5F5F5;
+	border-radius: 5px;
+	box-shadow: none;
+	border: none;
+}
+
+span {
+	text-align: center;
+}
+
+#terms_link {
+	text-decoration: none;
+}
+
+#get {
+	font-size: 20px;
+	text-decoration: none;
+}

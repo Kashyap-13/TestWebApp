@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<script src="jquery-1.11.3.js"></script>
+		<script src="hover_code.js"></script>
+		<link rel="stylesheet" href="styles.css"></link>		
+		
+		<title>This is My WebApp</title>
+	</head>
+	
+	<body>
+		<div id = "header">
+			<p id = "texts_title">Test Web App</p>
+			<div id = "div_sign_in_up">
+				<form method = "post" action = "#">
+					<input type = "text" id = "email" name = "email" required = "required" autofocus = "autofocus" placeholder = "Email" />
+					<input type = "password" id = "password" name = "password" required = "required" placeholder = "Password" />
+					<input type = "submit" id = "signin" name = "signin" value = "Sign In"/><br/>
+					<a href="#">Forgot Password?</a>
+				</form>
+				
+			</div>
+		</div>
+		
+		<div id = "div_sidebar">
+			<div class = "menu" id="menu_acc">My Account</div>			
+			<div class = "menu" id="menu_con">Add Contact</div>
+			<div class = "menu" id="menu_view">View Contact</div>
+			<div class = "menu" id="menu_view_all">View All</div>
+			<div class = "menu" id="menu_sign_out">Sign Out</div>
+		</div>
+		
+		<div id = "wrapper">
+			<p id = "get">Get Started</p>
+			<form method = "post" id = "RegForm" name = "RegForm">
+				<input type = "text" required = "required" onblur = "return validatenames(fname);" name = "fname" id = "fname" placeholder = "First Name" /><br/>
+				<input type = "text" required = "required" name = "lname" id = "lname" onblur = "return validatenames(lname);" placeholder = "Last Name" /><br/>
+				<input type = "radio" name = "gender" id = "male" value = "male" onchange = "return isChecked();" required = "required" />Male
+				<input type = "radio" name = "gender" id = "female" value = "female" required = "required" onchange = "return isChecked();" />Female<br/>
+				<input type = "text" name = "email" id = "email" required = "required" onblur = "return validateEmail();" placeholder = "Email" /><br/>
+				<input type = "password" name = "password" id = "password" onblur = "return validatePass();" required = "required" placeholder = "Password" />
+				<input type = "password" name = "repassword" id = "repassword" required = "required" onblur = "return validatePass();" placeholder = "Re-enter Password"/><br/><br/>
+				<input type = "checkbox" name = "terms" id = "terms" value = "Terms" required = "required"/><span>By clicking "Sign Up", I agree to this site's <br/><a id = "terms_link" href="#">Terms &amp; Conditions</a></span><br/><br/>
+
+				<input type = "submit" value = "Sign Up" name = "register" id = "register" onclick = "validateAll();" />
+		</form>
+		</div>
+	</body>
+</html>
